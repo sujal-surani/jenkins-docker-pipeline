@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Building the docker image...'
-                sh 'docker build t simple-web-app:latest .'
+                sh 'docker build -t simple-web-app:latest .'
             }
         }
 
